@@ -1,0 +1,58 @@
+h2 {
+    text-align: center
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.confirm-table {
+    width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+}
+
+table,
+table tr,
+table th,
+table td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.confirm-table__header {
+    background-color: #cd853f;
+    color: #fff;
+    width: 300px;
+}
+
+.form__button {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.form__button-1,
+.form__button-2 {
+    width: 150px;
+}
+
+.form__button-submit {
+    background-color: #cd853f;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.form__button-revise {
+    padding: 10px 30px;
+    font-size: 16px;
+}

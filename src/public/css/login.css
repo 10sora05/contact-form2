@@ -1,0 +1,83 @@
+ul.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.header-nav__item {
+    border: 1px solid #cd853f;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline;
+}
+
+.header-nav__register {
+    text-decoration: none;
+}
+
+.login__container {
+    background-color: #f5deb3;
+    width: 100%;
+    height: 700px;
+}
+
+.login-form__content {
+    background-color: #fff;
+    margin: 0 auto 30px;
+    padding: 30px;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+.login-form__heading {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+}
+
+.form__group {
+    margin-bottom: 5px;
+}
+
+.form__group-title {
+    text-align: left;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__button {
+    margin-top: 20px;
+}
+
+.form__button-submit {
+    background-color: #cd853f;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+}
+
+.register__link {
+    margin-top: 20px;
+    text-align: center;
+}

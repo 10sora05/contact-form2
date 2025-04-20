@@ -1,0 +1,20 @@
+* {
+    color: #cd853f;
+}
+
+h2 {
+    text-align: center;
+    margin: 200px auto 100px;
+}
+
+.thanks__home {
+    text-align: center;
+}
+
+.thanks__home__button {
+    background-color: #cd853f;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    text-decoration: none;
+}

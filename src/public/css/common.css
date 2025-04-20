@@ -1,0 +1,29 @@
+* {
+    color: #cd853f;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-utilities nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__button {
+    border: 1px solid #cd853f;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline;
+}
