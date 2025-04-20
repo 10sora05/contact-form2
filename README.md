@@ -64,6 +64,8 @@ php artisan db:seed
 
 
 ## URL
+
 ・開発環境：http://localhost/
+
 ・phpMyAdmin：git@github.com:10sora05/contact-form2.git
 

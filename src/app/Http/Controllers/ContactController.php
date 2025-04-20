@@ -10,7 +10,8 @@ class ContactController extends Controller
 {
  public function index()
     {
-        return view('index');
+        $contacts = Contact::latest()->take(7)->get(); 
+        return view('index', compact('contacts'));
     }
 
     // フォーム表示
@@ -113,23 +114,27 @@ class ContactController extends Controller
 
         return view('admin', compact('contacts'));
     }
-    public function show($id)
-{
-    $contact = Contact::findOrFail($id);
 
-    // 必要な情報をJSON形式で返す
+public function show($id)
+{
+    try {
+        $contact = Contact::findOrFail($id);
+    } catch (\Illuminate\Database\Eloquent\ModelNotFoundException $e) {
+        return response()->json(['error' => 'お問い合わせ情報が見つかりません'], 404);
+    }
+
     return response()->json([
         'name' => $contact->name,
-        'gender_label' => $contact->gender === 1 ? '男性' : '女性',
+        'gender_label' => $this->getGenderLabel($contact->gender),
         'email' => $contact->email,
-        'content' => $contact->content,
         'tel1' => $contact->tel1,
         'tel2' => $contact->tel2,
         'tel3' => $contact->tel3,
         'address' => $contact->address,
         'building' => $contact->building,
         'detail' => $contact->detail,
+        'content' => $contact->content,
     ]);
-} 
+}
 
 }

@@ -46,3 +46,4 @@ Route::get('/', function () {
         'content' => session('content'),
     ]);
 })->name('index');
+Route::get('/admin/contact/{id}', [ContactController::class, 'show']);
